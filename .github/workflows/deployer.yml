@@ -15,6 +15,6 @@ jobs:
 
     - uses: approvers/containers-deployer
       with:
-        ssh-host: {{ secrets.SSH_HOST }}
-        ssh-user: {{ secrets.SSH_USER }}
-        ssh-key: {{ secrets.SSH_KEY }}
+        ssh-host: ${{ secrets.SSH_HOST }}
+        ssh-user: ${{ secrets.SSH_USER }}
+        ssh-key: ${{ secrets.SSH_KEY }}
