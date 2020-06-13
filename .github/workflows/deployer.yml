@@ -13,8 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: approvers/containers-deployer
+    - uses: approvers/containers-deployer@v0.2.2
       with:
-        ssh-host: ${{ secrets.SSH_HOST }}
-        ssh-user: ${{ secrets.SSH_USER }}
-        ssh-key: ${{ secrets.SSH_KEY }}
+        ssh_host: ${{ secrets.SSH_HOST }}
+        ssh_port: ${{ secrets.SSH_PORT }}
+        ssh_user: ${{ secrets.SSH_USER }}
+        ssh_key: ${{ secrets.SSH_KEY }}
