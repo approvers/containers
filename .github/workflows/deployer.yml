@@ -13,6 +13,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Copy Secrets as .env
+      env:
+        EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
       run: |
         for DIRECTORY in */; do
           cd $DIRECTORY
