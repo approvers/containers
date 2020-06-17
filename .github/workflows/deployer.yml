@@ -12,7 +12,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: approvers/containers-deployer@v0.2.2
+    - name: Copy Secrets as .env
+      env:
+        NGINX_EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
+      run: |
+        for DIRECTORY in */; do
+          cd $DIRECTORY
+          printenv | grep "^$(echo $DIRECTORY | tr '[a-z]' '[A-Z]')_" > ./.env
+        done
+
+    - uses: approvers/containers-deployer@v0.3.0
       with:
         ssh_host: ${{ secrets.SSH_HOST }}
         ssh_port: ${{ secrets.SSH_PORT }}
