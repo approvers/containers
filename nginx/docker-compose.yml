@@ -6,7 +6,7 @@ services:
     container_name: nginx
     network_mode: host
     environment:
-      - TOKEN=${EXAMPLE_TOKEN}
+      - TOKEN=${NGINX_EXAMPLE_TOKEN}
     ports:
       - 80:80
       - 443:443

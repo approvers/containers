@@ -14,7 +14,7 @@ jobs:
 
     - name: Copy Secrets as .env
       env:
-        EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
+        NGINX_EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
       run: |
         for DIRECTORY in */; do
           cd $DIRECTORY
