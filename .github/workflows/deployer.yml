@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: approvers/containers-dotenv@v0.1.0
+    - uses: approvers/containers-dotenv@v0.1.1
       env:
         NGINX_EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
 
