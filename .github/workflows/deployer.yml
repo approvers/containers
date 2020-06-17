@@ -12,6 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Copy Secrets as .env
+      run: |
+        for DIRECTORY in */; do
+          cd $DIRECTORY
+          printenv | grep "^$(echo $DIRECTORY | tr '[a-z]' '[A-Z]')_" > ./.env
+        done
+
     - uses: approvers/containers-deployer@v0.2.2
       with:
         ssh_host: ${{ secrets.SSH_HOST }}
