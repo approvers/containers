@@ -12,15 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Copy Secrets as .env
+    - uses: approvers/containers-dotenv@0.1.0
       env:
         NGINX_EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
-      run: |
-        for DIRECTORY in */; do
-          cd $DIRECTORY
-          printenv | grep "^$(echo $DIRECTORY | sed 's/\///' | tr '[a-z]' '[A-Z]')_" > ./.env
-          cd ..
-        done
 
     - uses: approvers/containers-deployer@v0.3.0
       with:
