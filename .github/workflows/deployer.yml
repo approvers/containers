@@ -18,7 +18,7 @@ jobs:
       run: |
         for DIRECTORY in */; do
           cd $DIRECTORY
-          printenv | grep "^$(echo $DIRECTORY | tr '[a-z]' '[A-Z]')_" > ./.env
+          printenv | grep "^$(echo $DIRECTORY | sed 's/\///' | tr '[a-z]' '[A-Z]')_" > ./.env
         done
 
     - uses: approvers/containers-deployer@v0.3.0
