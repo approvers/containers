@@ -5,4 +5,4 @@ services:
     build: .
     container_name: change-status-go 
     environment:
-      - DISCORD_TOKEN=${CHANGE_STATUS_BOT_DISCORD_TOKEN}
+      - DISCORD_TOKEN=${CHANGE-STATUS-GO_DISCORD_TOKEN}
