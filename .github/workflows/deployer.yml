@@ -15,6 +15,7 @@ jobs:
     - uses: approvers/containers-dotenv@v0.1.1
       env:
         NGINX_EXAMPLE_TOKEN: ${{ secrets.EXAMPLE_TOKEN }}
+        VCLISTBOT_DISCORD_TOKEN: ${{ secrets.VCLISTBOT_DISCORD_TOKEN }}
 
     - uses: approvers/containers-deployer@v0.3.0
       with:

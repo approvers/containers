@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  vcListBot:
+    build: .
+    container_name: vcListBot
+    environment:
+      - DISCORD_BOT_TOKEN=${VCLISTBOT_DISCORD_TOKEN}
