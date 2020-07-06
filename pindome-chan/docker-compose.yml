@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  vcListBot:
+    build: .
+    container_name: pindome-chan
+    environment:
+      - DISCORD_TOKEN=${PINDOME_CHAN_DISCORD_TOKEN} 
+      - DISCORD_PERMISSIONS=${PINDOME_CHAN_DISCORD_PERMISSIONS}
+      - DISCORD_WEBHOOK_ID=${PINDOME_CHAN_DISCORD_WEBHOOK_ID}
+      - DISCORD_WEBHOOK_TOKEN=${PINDOME_CHAN_DISCORD_WEBHOOK_TOKEN}
