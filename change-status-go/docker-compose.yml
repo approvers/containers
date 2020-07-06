@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  change-status-go:
+    build: .
+    container_name: change-status-go 
+    environment:
+      - DISCORD_TOKEN=${CHANGE_STATUS_BOT_DISCORD_TOKEN}

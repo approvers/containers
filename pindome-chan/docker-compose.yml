@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  vcListBot:
+  pindome-chan:
     build: .
     container_name: pindome-chan
     environment:
