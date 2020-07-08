@@ -2,7 +2,7 @@ version: "3"
 
 services:
   vcListBot:
-    build: .
-    container_name: vcListBot
+    image: docker.pkg.github.com/approvers/vc-list-bot/vc-list-bot:1.0.1
+    container_name: vc-list-bot
     environment:
       - DISCORD_BOT_TOKEN=${VCLISTBOT_DISCORD_TOKEN}
