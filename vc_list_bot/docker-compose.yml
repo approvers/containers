@@ -5,4 +5,4 @@ services:
     image: docker.pkg.github.com/approvers/vc-list-bot/vc-list-bot:1.0.1
     container_name: vc-list-bot
     environment:
-      - DISCORD_BOT_TOKEN=${VCLISTBOT_DISCORD_TOKEN}
+      - DISCORD_BOT_TOKEN=${VC_LIST_BOT_DISCORD_TOKEN}
