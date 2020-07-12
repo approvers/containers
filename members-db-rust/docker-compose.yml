@@ -2,7 +2,7 @@ version: '3'
 
 services:
   members-db-rust:
-    image: docker.pkg.github.com/approvers/members-db-rust/members-db-rust:1.0.0
+    image: docker.pkg.github.com/approvers/members-db-rust/members-db-rust:1.1.0
     container_name: members-db-rust
     ports:
       - 14001:8000
