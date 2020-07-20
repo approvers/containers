@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  change-status-go:
+    image: docker.pkg.github.com/approvers/AHOXA/AHOXA:1.0.1
+    container_name: AHOXA
+    environment:
+      - DISCORD_TOKEN=${AHOXA_DISCORD_TOKEN}
