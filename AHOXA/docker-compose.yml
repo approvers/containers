@@ -2,7 +2,7 @@ version: "3"
 
 services:
   ahoxa:
-    image: docker.pkg.github.com/approvers/ahoxa/ahoxa:1.0.1
+    image: docker.pkg.github.com/approvers/ahoxa/ahoxa:1.1.1
     container_name: ahoxa
     environment:
       - DISCORD_TOKEN=${AHOXA_DISCORD_TOKEN}
