@@ -1,8 +1,0 @@
-version: "3"
-
-services:
-  change-status-go:
-    image: docker.pkg.github.com/approvers/change-status-go/change-status-go:1.0.1
-    container_name: change-status-go
-    environment:
-      - DISCORD_TOKEN=${CHANGE_STATUS_GO_DISCORD_TOKEN}
