@@ -10,4 +10,4 @@ services:
       - GitHub__Token=${CONTACTS_GATEWAY_GITHUB_TOKEN}
       - Discord__Token=${CONTACTS_GATEWAY_DISCORD_TOKEN}
     ports:
-      - 14002:8000
+      - 14002:80
