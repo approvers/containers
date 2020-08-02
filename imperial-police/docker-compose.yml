@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  imperial-police:
+    image: docker.pkg.github.com/approvers/imperial-police/imperial-police:latest
+    container_name: imperial-police
+    environment:
+      - IMPERIAL_POLICE_TOKEN=${IMPERIAL_POLICE_TOKEN}
