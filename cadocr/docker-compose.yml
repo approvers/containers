@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  members-db-rust:
+    image: docker.pkg.github.com/approvers/cadocr/cadocr:0.1.0
+    container_name: cadocr
+    entrypoint: /usr/local/bin/entrypoint
+    environment:
+      - Discord__Bot__Token=${CADOCR_DISCORD_BOT_TOKEN}
+      - CloudVision__Credentials__Content=${CADOCR_CLOUDVISION_CREDENTIALS_CONTENT}
+      - CloudVision__Credentials__Path=/etc/cloudvision.credentials.json
+    volumes:
+      - ./entrypoint.sh:/usr/local/bin/entrypoint
