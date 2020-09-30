@@ -2,7 +2,7 @@ version: '3'
 
 services:
   github_secretary:
-    image: docker.pkg.github.com/approvers/github-secretary/github-secretary:1.1.2
+    image: docker.pkg.github.com/approvers/github-secretary/github-secretary:1.1.5
     container_name: github_secretary
     environment:
       - DISCORD_TOKEN=${GITHUBSECRETARY_DISCORD_TOKEN}
