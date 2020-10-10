@@ -1,7 +1,7 @@
 version: "3"
 
 service:
-  genkai-dictionary:
+  genkai_dictionary:
     image: docker.pkg.github.com/approvers/genkai-dictionary/genkai-dictionary:1.0.0
     container_name: genkai-dictionary
     environment:
