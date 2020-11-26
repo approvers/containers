@@ -4,6 +4,7 @@ services:
   delitter:
     image: docker.pkg.github.com/approvers/delitter/delitter:1.0.0
     container_name: delitter
+    restart: unless-stopped
     environment:
       - DELITTER_DISCORD_SETTING_JSON_B64=${DELITTER_DISCORD_SETTING_JSON_B64}
       - DELITTER_TWITTER_SETTING_JSON_B64=${DELITTER_TWITTER_SETTING_JSON_B64}
