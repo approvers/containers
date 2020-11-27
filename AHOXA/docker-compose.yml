@@ -4,5 +4,6 @@ services:
   ahoxa:
     image: docker.pkg.github.com/approvers/ahoxa/ahoxa:1.1.1
     container_name: ahoxa
+    restart: unless-stopped
     environment:
       - DISCORD_TOKEN=${AHOXA_DISCORD_TOKEN}

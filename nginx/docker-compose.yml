@@ -4,6 +4,7 @@ services:
   nginx:
     image: nginx
     container_name: nginx
+    restart: unless-stopped
     network_mode: host
     environment:
       - TOKEN=${NGINX_EXAMPLE_TOKEN}

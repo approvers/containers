@@ -4,6 +4,7 @@ services:
   contacts_gateway:
     image: docker.pkg.github.com/approvers/contacts-gateway/contacts-gateway:0.1.0
     container_name: contacts_gateway
+    restart: unless-stopped
     environment: 
       - Twitter__ConsumerKey=${CONTACTS_GATEWAY_TWITTER_CONSUMER_KEY}
       - Twitter__ConsumerSecret=${CONTACTS_GATEWAY_TWITTER_CONSUMER_SECRET}
