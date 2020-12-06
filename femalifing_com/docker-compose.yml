@@ -14,6 +14,6 @@ services:
     container_name: mesuochi_com
     restart: unless-stopped
     ports:
-      - 21001:8000
+      - 21001:80
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:z
