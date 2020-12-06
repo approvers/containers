@@ -1,0 +1,19 @@
+version: '3'
+
+# note: the name of the domain which this container serves is "mesuochi.com",
+#       though the container's name is "femalifing_com".
+#       This name shake is for reducing the mental burden
+#       when typing this container's name, or looking this container's name, and so on.
+#
+#       yes don't forget that humans maybe dont like mesuochi
+#       (maybe some people (like me) do)
+
+services:
+  femalifing_com:
+    image: docker.pkg.github.com/approvers/femalifing_com/image:1.2.1
+    container_name: mesuochi_com
+    restart: unless-stopped
+    ports:
+      - 210001:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:z
