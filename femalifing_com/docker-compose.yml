@@ -10,8 +10,8 @@ version: '3'
 
 services:
   femalifing_com:
-    image: docker.pkg.github.com/approvers/mesuochi.com/image:1.2.1
-    container_name: mesuochi_com
+    image: docker.pkg.github.com/approvers/mesuochi.com/image:latest
+    container_name: femalifing_com
     restart: unless-stopped
     ports:
       - 21001:80
