@@ -1,4 +1,4 @@
-ersion: '3'
+version: '3'
 
 # note: the name of the domain which this container serves is "mesuochi.com",
 #       though the container's name is "femalifing_com".
