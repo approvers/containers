@@ -9,11 +9,11 @@ ersion: '3'
 #       (maybe some people (like me) do)
 
 services:
-	femalifing_com:
-		image: docker.pkg.github.com/approvers/mesuochi.com/image:1.2.1
-		container_name: mesuochi_com
-		restart: unless-stopped
-		ports:
-			- 21001:8000
-		volumes:
-			- /var/run/docker.sock:/var/run/docker.sock:z
+  femalifing_com:
+    image: docker.pkg.github.com/approvers/mesuochi.com/image:1.2.1
+    container_name: mesuochi_com
+    restart: unless-stopped
+    ports:
+      - 21001:8000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:z
