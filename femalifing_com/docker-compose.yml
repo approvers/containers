@@ -15,5 +15,3 @@ services:
     restart: unless-stopped
     ports:
       - 21001:80
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:z
