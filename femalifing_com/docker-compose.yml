@@ -14,4 +14,4 @@ services:
     container_name: femalifing_com
     restart: unless-stopped
     ports:
-      - 21001:80
+      - 14003:80
