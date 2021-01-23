@@ -2,7 +2,7 @@ version: "3"
 
 services:
   kotoli:
-    image: docker.pkg.github.com/mirror-kt/kotoli/kotoli:1.0.0
+    image: ghcr.io/mirror-kt/kotoli:1.0.1
     container_name: kotoli
     restart: unless-stopped
     environment:
