@@ -2,7 +2,7 @@ version: "3"
 
 services:
   github_secretary:
-    image: docker.pkg.github.com/approvers/github-secretary/github-secretary:1.3.2
+    image: docker.pkg.github.com/approvers/github-secretary/github-secretary:1.3.3
     container_name: github_secretary
     restart: unless-stopped
     environment:
