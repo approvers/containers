@@ -12,6 +12,6 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - /etc/certs:/etc/certs:z
+      - /etc/letsencrypt:/etc/letsencrypt:z
       - ./conf:/etc/nginx/conf.d:z
       - ./html:/var/www/html:z
