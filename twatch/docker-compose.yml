@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  twatch:
+    image: ghcr.io/approvers/twatch:0.1.0
+    container_name: twatch
+    restart: unless-stopped
+    environment:
+      - Twitter__ConsumerKey=${TWATCH_TWITTER_CONSUMER_KEY}
+      - Twitter__ConsumerSecret=${TWATCH_TWITTER_CONSUMER_SECRET}
+      - Twitter__AccessToken=${TWATCH_TWITTER_ACCESS_TOKEN}
+      - Twitter__AccessTokenSecret=${TWATCH_TWITTER_ACCESS_TOKEN_SECRET}
+      - Twitter__Keyword=${TWATCH_TWITTER_KEYWORD}
+      - Discord__WebhookUrl=${TWATCH_DISCORD_WEBHOOK_URL}
