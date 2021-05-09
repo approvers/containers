@@ -1,0 +1,16 @@
+name: "Validate docker-compose.yml"
+
+on:
+  push:
+    branches-ignore: "master"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        for DIRECTORY in $(find . -maxdepth 1 -type d -not -name '.*'); do
+          echo $DIRECTORY
+          docker-compose -f $DIRECTORY/docker-compose.yml config
+        done
