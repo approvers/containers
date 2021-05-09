@@ -2,7 +2,7 @@ name: "Validate docker-compose.yml"
 
 on:
   push:
-    branches-ignore: "main"
+    branches-ignore: "master"
 
 jobs:
   validate:
