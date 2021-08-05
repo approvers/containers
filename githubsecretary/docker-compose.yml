@@ -2,7 +2,7 @@ version: "3"
 
 services:
   github_secretary:
-    image: ghcr.io/approvers/github-secretary:v1.5.1
+    image: ghcr.io/approvers/github-secretary:v1.5.2
     container_name: github_secretary
     restart: unless-stopped
     environment:
